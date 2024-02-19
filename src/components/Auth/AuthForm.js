@@ -85,7 +85,7 @@ const AuthForm = () => {
       })
       .then((data) => {
         authCtx.login(data.idToken);
-        navigate("/");
+        navigate("/products");
         startTimer(); // Restart timer after successful login
       })
       .catch((err) => {
